@@ -1,0 +1,86 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    responsive.css                                     :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ksonu <ksonu@student.42.us.org>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/26 12:27:58 by ksonu             #+#    #+#              #
+#    Updated: 2018/06/26 13:20:03 by ksonu            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+TABLE {
+	max-width:100%;
+	max-height:100%;
+}
+
+TD {
+	text-align:center;
+	width:50px;
+	height:30px;
+	border: 1px solid black;
+}
+
+.nb {
+	border: 0px;
+}
+
+P {
+	font-family: "Courier New", Courier, monospace;
+	font-weight:lighter;
+	margin-top:0px;
+	font-size:1vw;
+}
+
+H1 {
+	font-family: "Courier New", Courier, monospace;
+	margin-bottom:10px;
+	font-size:2vw;
+	float:center;
+}
+
+
+.a {
+	background-color: #ed9282;
+}
+
+.b {
+	background-color: #f35b68;
+}
+
+.c {
+	background-color: #d81e5b;
+}
+
+.d {
+	background-color: #fef0d5;
+}
+
+.e {
+	background-color: #00beb2;
+}
+
+.f {
+	background-color: #1a5d63;
+}
+
+.g {
+	background-color: #f077c5;
+}
+
+.h {
+	background-color: #4c81b6;
+}
+
+.i {
+	background-color: #f6f49d;
+}
+
+.j {
+	background-color: #a85284;
+}
+
+.k {
+	background-color: #87898d;
+}

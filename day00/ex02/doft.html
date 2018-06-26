@@ -1,3 +1,15 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- doft.html                                          :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: ksonu <ksonu@student.42.us.org>            +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2018/06/26 12:25:25 by ksonu             #+#    #+#            -->
+<!-- Updated: 2018/06/26 12:25:29 by ksonu            ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
 <HTML>
 	<HEAD>
 		<link rel="stylesheet" type="text/css" href="doft.css">
@@ -18,7 +30,9 @@
 		<DIV class="mid-left-box mid">
 			<IMG id="left" SRC="resources/arrow.png" title="Advance" alt="Advance">
 			<IMG id="left" SRC="resources/main.png" title="Take" alt="Take">
-			<IMG id="left" SRC="resources/oeil.png" title="Look" alt="Look">
+			<DIV id="red-box">
+				<IMG id="left-look" SRC="resources/oeil.png" title="Look" alt="Look">
+			</DIV>
 			<IMG id="left" SRC="resources/outil.png" title="Use" alt="Use">
 			<IMG id="left" SRC="resources/chat-icon.png" title="Speak" alt="Speak">
 		</DIV>
@@ -30,11 +44,13 @@
 		<DIV class="mid-right-box mid">
 			<IMG id="right" SRC="resources/book.png" title="book">
 			<IMG id="right" SRC="resources/towel.png" title="towel">
-			<IMG id="right" SRC="resources/brick.jpg" title="brick">
+			<DIV class="right-brick">
+			<IMG id="right-b" SRC="resources/brick.jpg" title="brick">
+			<IMG id="right-b" SRC="resources/brick.jpg" title="brick">
+			</DIV>
 		</DIV>
 		<DIV class="bottom-box">
-			<P>Vous <SPAN class="bold">entrex</SPAN> alors dans une grande piece remplie d'<span class="red">ordinateurs</SPAN>...</P>
-			<P><EM>- Bonjour, vous êtes nouveau ici ?</EM></P>
+			<P>Vous <SPAN class="bold">entrez</SPAN> alors dans une grande piece remplie d'<span class="red">ordinateurs</SPAN>...<br /><EM>- Bonjour, vous êtes nouveau ici ?</EM></P>
 			<FORM>
 				<DIV align="center"><INPUT  type="text" id="blank">
 					<INPUT type="submit" value="Repondre" id="repondre"></DIV>

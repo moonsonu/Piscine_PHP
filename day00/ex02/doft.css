@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    doft.css                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ksonu <ksonu@student.42.us.org>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/26 12:25:11 by ksonu             #+#    #+#              #
+#    Updated: 2018/06/26 12:25:14 by ksonu            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 .top-box {
 	background:#909090;
 	box-shadow: 10px 10px 5px black;
@@ -63,7 +75,7 @@
 	border-radius:10px;
 	float:left;
 	margin-left:3%;
-	margin-top:-5%;
+	margin-top:-10%;
 	position: relative;
 }
 
@@ -81,6 +93,12 @@
 	margin-bottom:7%;
 }
 
+#left-look {
+	display:block;
+	width:100%;
+	height:auto;
+}
+
 #middle {
 	width: 100%;
 	height: auto;
@@ -90,8 +108,22 @@
 	display: block;
 	width: 50%;
 	height: auto;
+	margin-top:5%;
 	margin-left:30%;
 	margin-bottom:5%;
+}
+
+#right-b {
+	display: block;
+}
+
+.right-brick {
+	display:block;
+	width:80%;
+	height:auto;
+	margin-left:10%;
+	background-image: url("resources/brick.jpg");
+	background-repeat:repeat;
 }
 
 #reload {
@@ -114,9 +146,10 @@
 #loupe {
 	display:block;
 	width:22%;
-	height:auto;
-	float:right;
-	margin-top:-1%;
+	margin-left:73%;
+	margin-top:-10%;
+	z-index:2;
+	position:absolute;
 }
 
 #chair {
@@ -138,14 +171,17 @@
 }
 
 P {
-	font-size:100%;
+	font-size:80%;
 	font-family:Verdana;
 	margin:0;
+	margin-top:3%;
+	margin-left:3%;
 }
 
 .bold {
 	font-size:200%;
-	font-weight: bold;
+	font-weight: normal;
+	font-family:"Palatino Linotype";
 }
 
 .red {
@@ -153,8 +189,18 @@ P {
 }
 
 #blank {
-	width:65%;
+	width:78%;
 	height:10%;
 	display: inline-block;
 	margin-top:1%;
+}
+
+#red-box {
+	display:block;
+	width:50%;
+	margin-left:25%;
+	border:5px solid;
+	padding:1px;
+	color:red;
+	border-radius:5px;
 }

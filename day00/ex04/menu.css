@@ -1,0 +1,84 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    menu.css                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ksonu <ksonu@student.42.us.org>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/06/26 14:34:20 by ksonu             #+#    #+#              #
+#    Updated: 2018/06/26 16:13:19 by ksonu            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#top {
+	list-style:none;
+	height:35px;
+	width:450px;
+	background:grey;
+}
+
+.top-box {
+	background:pink;
+	width:100%;
+	position:relative;
+	margin:0;
+	border-radius:5px;
+}
+
+.bottom-box {
+	background:grey;
+	width:73%;
+	position:relative;
+	margin:0;
+	border-radius:5px;
+}
+
+.menu {
+	font-size:2vw;
+	font-family:Courier;
+	text-align:center;
+	color:white;
+}
+
+#top LI {
+	list-style:none;
+	float:left;
+	width:150px;
+	position:relative;
+}
+
+.list {
+	font-size:1.3vw;
+	margin-left:20%;
+	margin-top:10%;
+	margin-bottom:10%;
+	font-family:Courier;
+	display: inline-block;
+	text-align:center;
+	color:white;
+}
+
+#top UL {
+	list-style:none;
+	position:absolute;
+	display:none;
+}
+
+#top LI:hover UL {
+	display:block;
+	background:pink;
+	color:grey;
+}
+
+#top .top-box:hover {
+	display:block;
+	background:grey;
+	color:white;
+}
+
+#top LI A:hover DIV{
+	width:100%;
+	margin-left:-27%;
+	background:white;
+	color:pink;
+}
