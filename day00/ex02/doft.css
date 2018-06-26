@@ -1,0 +1,160 @@
+.top-box {
+	background:#909090;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+}
+
+.top-grey {
+	width: 88%;
+	height: auto;
+	margin: auto;
+	margin-top: 1%;
+	padding: 1%;
+	position: relative;
+}
+
+.mid {
+	display: inline-block;
+	width:30%;
+	height:auto%;
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.mid-left-box {
+	width:10%;
+	height:auto;
+	background:#909090;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+	margin-left:8%;
+	float:left;
+	position: relative;
+}
+
+.mid-mid-box {
+	width:60%;
+	height:auto;
+	background:#909090;
+	box-shadow:10px 10px 5px black;
+	border-radius:10px;
+	padding: 1%;
+	float:left;
+	margin-left:1%;
+	position:relative;
+}
+
+.mid-right-box {
+	width:10%;
+	height:40%;
+	background:#909090;
+	box-shadow: 10px 10px 5px black;
+	border-radius: 10px;
+	float:left;
+	margin-left:1%;
+	position: relative;
+}
+
+.bottom-box {
+	width:33%;
+	height:13%;
+	background:#4dff78;
+	box-shadow:10px 10px 5px black;
+	border-radius:10px;
+	float:left;
+	margin-left:3%;
+	margin-top:-5%;
+	position: relative;
+}
+
+#top {
+	display: inline-block;
+	width: 40%;
+	margin-left:1%;
+}
+
+#left {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left:30%;
+	margin-bottom:7%;
+}
+
+#middle {
+	width: 100%;
+	height: auto;
+}
+
+#right {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left:30%;
+	margin-bottom:5%;
+}
+
+#reload {
+	display:block;
+	width:3%;
+	height:auto;
+	float:right;
+	margin-top:0%;
+}
+
+#close {
+	display:block;
+	width:3%;
+	height:auto;
+	float:right;
+	margin-right:-3%;
+	margin-top:7%;
+}
+
+#loupe {
+	display:block;
+	width:22%;
+	height:auto;
+	float:right;
+	margin-top:-1%;
+}
+
+#chair {
+	width:10%;
+	height:43px;
+	float: right;
+	margin-top:-22%;
+	margin-right:57%;
+	position:relative;
+}
+
+#computer {
+	width:120%;
+	height:43px;
+	float: right;
+	margin-top:-22%;
+	margin-right:0%;
+	position:relative;
+}
+
+P {
+	font-size:100%;
+	font-family:Verdana;
+	margin:0;
+}
+
+.bold {
+	font-size:200%;
+	font-weight: bold;
+}
+
+.red {
+	text-shadow: 6px 6px 5px red;
+}
+
+#blank {
+	width:65%;
+	height:10%;
+	display: inline-block;
+	margin-top:1%;
+}
