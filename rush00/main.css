@@ -1,0 +1,166 @@
+/*ft_minishop*/
+
+#main_menu {
+	width:100%;
+	position:relative;
+}
+
+#main_menu UL LI {
+	list-style-type:none;
+	padding-left:0px;
+	margin:0px;
+	display:inline;
+	line-height:15px;
+	vertical-align:middle;
+	text-align:left;
+	float:left;
+}
+
+#main_menu .mm {
+	text-decoration:none;
+	opacity:0.5;
+	display: block;
+	width: 80px;                       
+	font-size: 20px;                    
+	font-weight: bold;
+	font-family:Courier;
+	color: white;
+	margin-left:70%;
+	transition-duration:.7s;
+}
+
+#main_menu .mm:hover {    
+	color: white;
+	opacity:1;
+	transition-duration:.7s;
+}
+
+#logo {
+	width:20%;
+	margin:0;
+	opacity:0.5;
+	transition-duration:.7s;
+}
+
+#logo:hover {
+	opacity:1;
+	transition-duration:.7s;
+}
+
+/*login*/
+
+.title {
+	margin-top:0%;
+}
+
+.login {
+	margin-left:38%;
+	width:250px;
+	height:250px;
+	background-color:white;
+	border-radius:5px;
+	padding:50px 20px 20px 0px;
+}
+
+.id {
+	width:100%;
+	display:block;
+	font-family:Courier;
+	text-align:center;
+}
+
+.passwd {
+	width:100%;
+	display:block;
+	font-family:Courier;
+	text-align:center;
+	margin-top:20%;
+}
+
+H1 {
+	font-family:Courier;
+	text-align:center;
+	color:white;
+}
+
+
+.button {
+	margin-top:20%;
+	display:block;
+	width:50%;
+	font-family:Courier;
+	margin-left:25%;
+}
+
+/*shop*/
+
+#topmenu {
+	margin-top:-10%;
+	margin-right:0%;
+}
+
+#topmenu UL {
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+#topmenu UL LI {
+	color:white;
+	float: right;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+}
+
+.menuLink, .sub {
+	text-decoration:none;
+	opacity:0.5;
+	display: block;
+	width: 150px;                       
+	font-size: 20px;                    
+	font-weight: bold;
+	font-family:Courier;
+	transition-duration:.7s;
+}
+
+.menuLink {     
+	color: white;
+}
+
+.topmenuli:hover .menuLink {    
+	color: white;
+	opacity:1;
+	transition-duration:.7s;
+}
+
+.sub {          
+	color: white;             
+	margin-top: -1px;           
+}
+
+.submenu {             
+	position: absolute;     
+	height: 0px;            
+	overflow: hidden;       
+	transition: height .2s; 
+	-webkit-transition: height .2s; 
+	-moz-transition: height .2s; 
+	-o-transition: height .2s;
+	transition-duration:.7s;
+}
+
+.topMenuLi:hover .submenu { 
+	height: 93px;
+	transition-duration:.7s;
+	opacity:1;
+}
+
+.sub:hover {        
+	color: black;                 
+	background-color: #dddddd;
+	transition-duration:.7s;
+	opacity:1;
+}
+
