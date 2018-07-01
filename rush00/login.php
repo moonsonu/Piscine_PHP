@@ -1,27 +1,21 @@
 <?php
 session_start();
-
 function auth($login, $passwd)
 {
-	echo "2\n";
-	$unser = unserialize(file_get_contents("../private/passwd"));
-	foreach ($unser as $i => $value)
+	$user_info = unserialize(file_get_contents("data/user.txt"));
+	$hash_passwd = hash("md5", $passwd);
+	foreach ($user_info as $user)
 	{
-	echo "3\n";
-		if ($value['login'] == $login && hash("whirlpool", $passwd) == $value['passwd'])
-			return (TRUE);
+		if ($user['login'] == $login && $user['passwd'] == $hash_passwd)
+			return TRUE;
 	}
-	return (FALSE);
+	return FALSE;
 }
-
-if (auth($_GET['login'], $_GET['passwd']))
+if (auth($_POST['login'], $_POST['passwd']))
 {
-	$_SESSION['loggued_on_user'] = $_GET['login'];
-	echo "OK\n";
+	$_SESSION['logged_on_user'] = $_POST['login'];
+	include 'shop_log.php';
 }
 else
-{
-	$_SESSION = "";
-	echo "ERROR\n";
-}
+	include 'login.html';
 ?>

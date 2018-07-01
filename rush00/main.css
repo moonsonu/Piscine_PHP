@@ -12,7 +12,7 @@
 	display:inline;
 	line-height:15px;
 	vertical-align:middle;
-	text-align:left;
+	text-align:center;
 	float:left;
 }
 
@@ -56,10 +56,9 @@
 .login {
 	margin-left:38%;
 	width:250px;
-	height:250px;
 	background-color:white;
 	border-radius:5px;
-	padding:50px 20px 20px 0px;
+	padding:50px 20px 5px 20px;
 }
 
 .id {
@@ -75,6 +74,15 @@
 	font-family:Courier;
 	text-align:center;
 	margin-top:20%;
+}
+
+.signup {
+	font-size:15px;
+	display:block;
+	color:white;
+	text-align:center;
+	font-family:Courier;
+	margin-top:1%;
 }
 
 H1 {
@@ -164,3 +172,46 @@ H1 {
 	opacity:1;
 }
 
+/*shop_log*/
+.top {
+	margin-top:0%;;
+	color:white;
+	text-align:right;
+	float:right;
+	font-family:Courier;
+	opacity:.5;
+	font-size:16px;
+}
+
+.hi {
+	margin-left:10px;
+}
+.basket {
+	width:40px;
+	opacity:.6;
+	z-index:9
+}
+
+.logout {
+	width:35px;
+	opacity:.8;
+	z-index:8
+}
+
+.basket:hover {
+	transition-duration:.7s;
+	opacity:1;
+}
+
+.logout:hover {
+	transition-duration:.7s;
+	opacity:1;
+}
+
+/*signup_fail*/
+
+.fail {
+	color:red;
+	font-family:Courier;
+	text-align:center;
+}
