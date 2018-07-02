@@ -1,20 +1,15 @@
 <?php
 session_start();
-function auth($login, $passwd)
+include "connection.php";
+$passwd = hash("md5", $_POST["passwd"]);
+$login = $_POST["login"];
+$sql = "SELECT *  FROM `user` WHERE `login` = '{$login}' and `passwd` = '{$passwd}'";
+$ur = mysqli_query($conn, $sql);
+$signin = mysqli_fetch_assoc($ur);
+if ($signin > 0)
 {
-	$user_info = unserialize(file_get_contents("data/user.txt"));
-	$hash_passwd = hash("md5", $passwd);
-	foreach ($user_info as $user)
-	{
-		if ($user['login'] == $login && $user['passwd'] == $hash_passwd)
-			return TRUE;
-	}
-	return FALSE;
-}
-if (auth($_POST['login'], $_POST['passwd']))
-{
-	$_SESSION['logged_on_user'] = $_POST['login'];
-	include 'shop_log.php';
+	$_SESSION['logged_on_user'] = $login;
+	include 'index.php';
 }
 else
 	include 'login.html';

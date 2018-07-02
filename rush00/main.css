@@ -9,30 +9,12 @@
 	list-style-type:none;
 	padding-left:0px;
 	margin:0px;
-	display:inline;
+	/* display:inline; */
 	line-height:15px;
 	vertical-align:middle;
 	text-align:center;
-	float:left;
-}
-
-#main_menu .mm {
-	text-decoration:none;
-	opacity:0.5;
-	display: block;
-	width: 80px;                       
-	font-size: 20px;                    
-	font-weight: bold;
-	font-family:Courier;
-	color: white;
-	margin-left:70%;
-	transition-duration:.7s;
-}
-
-#main_menu .mm:hover {    
-	color: white;
-	opacity:1;
-	transition-duration:.7s;
+	float: left;
+	padding: 2em;
 }
 
 #logo {
@@ -54,11 +36,21 @@
 }
 
 .login {
-	margin-left:38%;
+	/* align-content: center;
 	width:250px;
 	background-color:white;
 	border-radius:5px;
 	padding:50px 20px 5px 20px;
+	 */
+	 background-color: white;
+	 border-radius: 5px;
+	 padding: 50px 20px 5px 20px;
+	 position: relative;
+	 width: 300px;
+	 height: 250px;
+	 z-index: 15;
+	 top: 0%;
+	 left: 42%;
 }
 
 .id {
@@ -66,6 +58,7 @@
 	display:block;
 	font-family:Courier;
 	text-align:center;
+	color: black;
 }
 
 .passwd {
@@ -74,15 +67,15 @@
 	font-family:Courier;
 	text-align:center;
 	margin-top:20%;
+	color: black;
 }
-
 .signup {
-	font-size:15px;
-	display:block;
-	color:white;
-	text-align:center;
-	font-family:Courier;
-	margin-top:1%;
+font-size: 1em;
+display: block;
+color: white;
+text-align: center;
+font-family: Courier;
+margin-top: 3%;
 }
 
 H1 {
@@ -120,6 +113,8 @@ H1 {
 	vertical-align: middle;
 	text-align: center;
 	position: relative;
+	font-size: 1.5em;                    
+	font-weight: bold;
 }
 
 .menuLink, .sub {
@@ -127,7 +122,7 @@ H1 {
 	opacity:0.5;
 	display: block;
 	width: 150px;                       
-	font-size: 20px;                    
+	font-size: 1.5em;                    
 	font-weight: bold;
 	font-family:Courier;
 	transition-duration:.7s;
@@ -138,9 +133,12 @@ H1 {
 }
 
 .topmenuli:hover .menuLink {    
-	color: white;
 	opacity:1;
 	transition-duration:.7s;
+	color: rgb(35, 206, 206);
+	font-size: 1.5em;                    
+	font-weight: bold;
+	padding: 2em;
 }
 
 .sub {          
@@ -157,10 +155,11 @@ H1 {
 	-moz-transition: height .2s; 
 	-o-transition: height .2s;
 	transition-duration:.7s;
+	color: rgb(35, 206, 206);
 }
 
 .topMenuLi:hover .submenu { 
-	height: 93px;
+	height: 83px;
 	transition-duration:.7s;
 	opacity:1;
 }
@@ -180,7 +179,7 @@ H1 {
 	float:right;
 	font-family:Courier;
 	opacity:.5;
-	font-size:16px;
+	font-size:2em;
 }
 
 .hi {
@@ -201,11 +200,13 @@ H1 {
 .basket:hover {
 	transition-duration:.7s;
 	opacity:1;
+	background-color: rgb(35, 206, 206);
 }
 
 .logout:hover {
 	transition-duration:.7s;
 	opacity:1;
+	color: rgb(35, 206, 206);
 }
 
 /*signup_fail*/
@@ -214,4 +215,91 @@ H1 {
 	color:red;
 	font-family:Courier;
 	text-align:center;
+}
+
+/*product*/
+.wrapper {
+    /* float: left; */
+    padding: 6em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+    grid-auto-rows: 500px;
+	text-align: center;
+  }
+
+  body{
+      background-color:black;
+      color:white;
+      text-align: center;
+      font-family: "Lucida Console", Monaco, monospace;
+      
+  }
+  h3{
+	color: rgb(35, 206, 206);
+    
+  }
+  p{
+      color:lightslategray;
+      color:white;
+      font-family: "Lucida Console", Monaco, monospace;
+  }
+  img{
+    border-radius: 20px;
+  }
+
+.button img{
+  border-radius: 0ch;
+  align-content: center;
+}
+
+.button {
+    background-color: rgb(52, 187, 211);
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: black; 
+    border: 2px solid white;
+	border-radius: 15px;
+	align-content: center;
+}
+.wrapper .button{
+	width: 110px;
+	height: 60px;
+	align-content: center;
+}
+.button:hover {
+    background-color: rgb(199, 46, 84);
+    color: white;
+}
+.rightnav {
+	position: absolute;
+	float:right;
+	top:1em;
+	right:1em;
+	font-size: 2.5em;
+}
+.rightnav img{
+	position: relative;
+	width: 60px;
+	height :50px;
+	color: rgb(35, 206, 206);
+}
+.shoptable{
+	font-family: arial, sans-serif;
+    padding-left: 350px;
+	width: 100%;
+	position: absolute;
+}
+.shoptable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
