@@ -1,0 +1,26 @@
+<- Vector ----------------------------------------------------------------------
+The Vector class handles space 3D Vectors.
+An instance is contructed from two Vertex orig and dest.
+It represents then the vector between thos two points.
+new Vector( array( 'dest' => #instanceOfVertex, 'orig' => #instanceOfVertex );
+Ff the vertex 'orig' is not precised, it will then be (0,0,0) as default.
+
+All Attributes are private, you may want to use getters.
+When a Vector is created, you wont be able to change its values after.
+aka-> no setters;
+
+The class provides the following methods :
+float magnitude() : returns the vector's length.
+vector normalize() : returns a normalized version of the vector.
+vector add(vector $rhs) : returns the sum vector of both vectors.
+vector sub(vector $rhs) : returns the difference vector of both vectors.
+vector opposite : returs the opposite vector.
+vector scalarProduct($k) : returns the multiplication of the vector 
+with a scalar.
+float dotProduct(Vector $rhs) : returns the scalar multiplication
+of both vectors.
+float cos(vector $rhs) : returns the angle's Appendix cosine between
+both vectors.
+vector crossProduct(vector $rhs) : returns the cross multiplication of
+both vectors.
+---------------------------------------------------------------------- Vector ->
