@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>balloon</TITLE>
+<SCRIPT type="text/javascript">
+var balloon;
+var size = 200;
+var index = 0;
+var color = {0: 'red', 1: 'green', 2: 'blue'};
+window.onload = function () {
+	balloon = document.getElementById("balloon");
+	balloon.addEventListener("click", Click);
+	balloon.addEventListener("mouseleave", Mouse);
+}
+function Mouse() {
+	size -= 5;
+	if (size < 200)
+		size = 200;
+	index--;
+	if (index < 0)
+		index = 2;
+	reBalloon(index);
+}
+
+function Click() {
+	size += 10;
+	if (size > 420)
+		size = 200;
+	index++;
+	if (index > 3)
+		index = 0;
+	reBalloon(index);
+	}
+
+function reBalloon(index) {
+	balloon.style.width = size + 'px';
+	balloon.style.height = size + 'px';
+	balloon.style.background = color[index];
+}
+</SCRIPT>
+<STYLE>
+DIV.balloon {
+	background:red;
+	height:200px;
+	width:200px;
+	border-radius:50%;
+}
+</STYLE>
+</HEAD>
+<BODY>
+<DIV id="balloon" class="balloon"></DIV>
+</BODY>
+</HTML>

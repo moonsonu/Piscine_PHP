@@ -1,0 +1,53 @@
+<HTML>
+<HEAD><TITLE>calc</TITLE></HEAD>
+<SCRIPT>
+function total()
+{
+var n1 = parseInt(document.getElementById("first").value);
+var n2 = parseInt(document.getElementById("second").value);
+var rst;
+var oper = document.getElementById("op").value;
+if (n1 < 0 || n2 < 0)
+{
+	alert("Error :(");
+	console.log("Error :(");
+}
+else if (n2 == 0 && (oper == 'div' || oper == 'mod'))
+{
+	alert("It over 9000!");
+	console.log("It's over 9000!");
+}
+else
+{
+	rst = calculate(oper, n1, n2); 
+	console.log(rst);
+	alert(rst);
+}
+}
+function calculate(oper,n1,n2) {
+		switch(oper)
+		{
+			case "add":return (n1+n2);
+			case "min":return (n1-n2);
+			case "mul":return (n1*n2);
+			case "div":return (n1/n2);
+			case "mod":return (n1%n2);
+		}
+	}
+setInterval(function(){alert('Please, use me...');}, 30000);
+</SCRIPT>
+<BODY>
+<FORM>
+<INPUT type="text" id="first">
+<SELECT class="op" id="op">
+<OPTION value="add">+</OPTION>
+<OPTION value="min">-</OPTION>
+<OPTION value="mul">*</OPTION>
+<OPTION value="div">/</OPTION>
+<OPTION value="mod">%</OPTION>
+</SELECT>
+<INPUT type="text" id="second">
+</FORM>
+<BUTTON type="submit" id="submit" onclick="total()">Try me!</BUTTON>
+</BODY>
+</HTML>

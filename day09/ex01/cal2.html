@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		/*.calculator {
+			border: 1px solid black;
+		}
+		.input-box {
+			border: 1px solid black;
+		}
+		input {
+			border: 1px solid black;
+		}*/
+		/*.dropdown {
+			position: relative;
+			display: inline-block;
+		}*/
+		/*.button {
+			border: 1px solid black;
+		}*/
+		/*.dropdown-content {
+			/*border: 1px solid black;*/
+	/*		position: absolute;
+			display: none;
+		}
+		.dropdown:hover .dropdown-content {display: block;}*/
+	</style>
+	<script>
+	window.onload = function()
+	{
+		setInterval(
+			function()
+			{
+				alert('Please, use me...');
+			}
+			, 30000);
+	}
+	function calculate()
+	{
+		var firstNum = parseInt(document.getElementById('firstNum').value);
+		var secondNum = parseInt(document.getElementById('secondNum').value);
+		var op = document.getElementById('op').value;
+		if (secondNum == 0 && (op == "%" || op == "/"))
+		{
+			alert("It's over 9000!");
+			console.log("It's over 9000!")
+		}
+		else if (firstNum < 0 || secondNum < 0 || !Number.isInteger(firstNum && secondNum))
+		{
+			alert("Error :(");
+			console.log("Error :(")
+		}
+		else
+		{
+			var res = doop(op, firstNum, secondNum);
+			console.log(res);
+			alert(res);
+		}
+	}
+	function doop(op, firstNum, secondNum)
+	{
+		switch(op)
+		{
+			case "+":return(firstNum + secondNum);
+			case "-":return(firstNum - secondNum);
+			case "*":return(firstNum * secondNum);
+			case "/":return(firstNum / secondNum);
+			case "%":return(firstNum % secondNum);
+		}
+
+	}
+	</script>
+</head>
+<body>
+	<div class="page">
+		<h1>
+		simple calculator
+		</h1>
+		<div class="calculator">
+			<form class="input-box">
+				first number:
+				<input id="firstNum" type="text">
+				<!-- <div class="dropdown">
+					<div class="button">
+					op
+					</div> -->
+					<select id="op">
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+						<option value="%">%</option>
+					</select>
+				<!-- </div> -->
+				second number:
+				<input id="secondNum" type="text">
+			</form>
+			<button type="submit" id="tryme" onclick="calculate()" >Try me!</button>
+		</div>
+	</div>
+</body>
+</html>
